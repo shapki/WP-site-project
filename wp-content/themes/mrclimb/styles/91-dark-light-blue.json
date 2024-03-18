@@ -1,0 +1,41 @@
+{
+    "title": "Dark and light blue",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "Background",
+					"slug": "mrclimb-background"
+				},
+				{
+					"color": "#000000",
+					"name": "Text",
+					"slug": "mrclimb-text"
+				},
+				{
+					"color": "#1E2121",
+					"name": "Dark",
+					"slug": "mrclimb-dark"
+				},
+				{
+					"color": "#578FBF",
+					"name": "Decoration",
+					"slug": "mrclimb-decoration"
+				},
+				{
+					"color": "#C0D7EA",
+					"name": "Element",
+					"slug": "mrclimb-element"
+				},
+				{
+					"color": "#D7F0F3",
+					"name": "Light",
+					"slug": "mrclimb-light"
+				}
+			]
+		}
+    }
+}

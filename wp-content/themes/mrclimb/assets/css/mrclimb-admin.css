@@ -1,0 +1,17 @@
+h2, h3 {
+    font-size: 1.7em;
+    margin: 1em 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+.svglabel {
+    padding-right: 25px;
+    padding-top: 30px;
+}
+
+.mrclimb-number {
+    width: 75px;
+}

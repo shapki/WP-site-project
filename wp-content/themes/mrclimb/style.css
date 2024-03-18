@@ -1,0 +1,372 @@
+/*
+Theme Name: MRclimb
+Theme URI: https://mrmauvetech.com/mrclimb-theme/
+Author: MR Mauvetech
+Author URI: https://mrmauvetech.com
+Description: MRClimb is a modern, responsive and light weight full site editing theme for Wordpress tailored for climbers, excursionists, travel bloggers or small companies that want to showcase their adventure/sport related businesses. The theme takes full advantage of the Wordpress editor and includes several templates, patterns, global styles and block styles to easily build and personalize a website from scratch or restyle an existing FSE installation. It also includes a configuration page to setup a sticky header, a fully customizable back to top button and more goodies specific for climbers.
+Requires at least: 6.2
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.0.3
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: mrclimb
+Tags: blog, entertainment, photography, two-columns, right-sidebar, wide-blocks, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, editor-style, full-site-editing, template-editing, 
+*/
+
+/*
+overwrite default padding values when group has a background color
+*/
+:where(.wp-block-group.has-background) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*
+modify close button position for mobile menu overlay
+*/
+.wp-block-navigation__responsive-container-close {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+/*
+disabled comments take no space
+*/
+.no-space-comment {
+    margin-block-start: 0 !important;
+}
+
+/*
+styles for custom pages
+*/
+.no-space-footer {
+    margin-block-start: 0 !important;
+}
+
+/*
+justified alternative style for blocks
+*/
+.is-style-justified-text-block {
+	text-align: justify;
+    white-space: normal !important;
+}
+
+/*
+vertical alternative style for headings in column
+*/
+@media (min-width: 782px) {
+    .is-style-vertical-header-block h1,
+    .is-style-vertical-header-block h2,
+    .is-style-vertical-header-block h3,
+    .is-style-vertical-header-block h4,
+    .is-style-vertical-header-block h5,
+    .is-style-vertical-header-block h6 {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-weight: 400;
+        white-space: nowrap !important;
+    }
+}
+
+/*
+manage link style for navigation in header
+*/
+header .wp-block-navigation ul li a:hover {
+    color: var(--wp--preset--color--mrclimb-decoration) !important;
+}
+
+header .wp-block-navigation ul li.current-menu-item a {
+    color: var(--wp--preset--color--mrclimb-decoration) !important;
+}
+
+header .wp-block-navigation ul li.current-menu-item ul li a {
+    color: inherit !important;
+}
+
+header .wp-block-social-link-anchor svg:hover {
+    fill: var(--wp--preset--color--mrclimb-decoration) !important;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+    padding: 0.5em;
+    line-height: 1em;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+    padding-left: 3em;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+    padding-top: 0.75em;
+    line-height: 2em;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container li a span::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+/*
+reverse column order on mobile
+*/
+@media (max-width: 781px) {
+    .is-style-reverse-mobile-order {
+        flex-direction: column-reverse;
+    }
+}
+
+/*
+drop cap style
+*/
+.has-drop-cap:not(:focus)::first-letter {
+	font-family: var(--wp--custom--drop-cap--typography--font-family);
+	font-size: var(--wp--custom--drop-cap--typography--font-size);
+	font-weight: var(--wp--custom--drop-cap--typography--font-weight);
+	font-style: var(--wp--custom--drop-cap--typography--font-style);
+	line-height: var(--wp--custom--drop-cap--typography--line-height);
+	margin: var(--wp--custom--drop-cap--spacing--margin);
+	padding: var(--wp--custom--drop-cap--spacing--paddig);
+    color: var(--wp--preset--color--mrclimb-decoration);
+}
+
+/*
+calendar block styling
+*/
+.wp-block-calendar table:where(:not(.has-text-color)) td,
+.wp-block-calendar table:where(:not(.has-text-color)) th {
+    border-color: var(--wp--preset--color--mrclimb-decoration);
+}
+
+:where(.wp-block-calendar table:not(.has-background) th) {
+    background: var(--wp--preset--color--mrclimb-decoration);
+}
+
+.wp-block-calendar th {
+    color: var(--wp--preset--color--white);
+}
+
+/*
+separator for post navigation bar
+*/
+.nav-previous{
+    position: relative;
+    padding-right: 10px;
+}
+
+.nav-next{
+    padding-left: 10px;
+}
+
+.nav-previous::after {
+    position: absolute;
+    content: '';
+    top: 10%;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background: var(--wp--preset--color--mrclimb-decoration);
+}
+
+/*
+button opacity effect on hover
+*/
+.wp-element-button:hover {
+    opacity: 0.75;
+    transition: 0.75s;
+}
+
+/*
+border left with element color, disabled on mobile
+*/
+@media (min-width: 782px) {
+    .border-left-element {
+        border-left: 2px solid var(--wp--preset--color--mrclimb-element);
+    }
+}
+
+/*
+border left with grey color, disabled on mobile
+*/
+@media (min-width: 782px) {
+    .border-left-grey {
+        border-left: 1px solid #949494;
+    }
+}
+
+/*
+border left with white color, disabled on mobile
+*/
+@media (min-width: 782px) {
+    .border-left-white {
+        border-left: 1px solid #FFFFFF;
+    }
+}
+
+/*
+search bar and comments outline focus with theme colors
+*/
+.wp-block-search .wp-block-search__input,
+.wp-block-post-comments-form textarea,
+.wp-block-post-comments-form input:not([type="checkbox"]) {
+    border-radius: 8px;
+}
+
+.wp-block-search .wp-block-search__input:focus,
+.wp-block-post-comments-form textarea:focus,
+.wp-block-post-comments-form input:not([type="checkbox"]):focus {
+    outline-color: var(--wp--preset--color--mrclimb-decoration);
+    outline-offset: -4px;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+/*
+class to style external plugins forms with theme colors
+*/
+.mrclimb-form-style textarea,
+.mrclimb-form-style input:not([type="checkbox"]) {
+    border: 1px solid #949494;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+    padding: calc(.667em + 2px);
+    box-sizing: border-box;
+    display: block;
+    width: 100%
+}
+
+.mrclimb-form-style textarea:focus,
+.mrclimb-form-style input:not([type="checkbox"]):focus {
+    outline-color: var(--wp--preset--color--mrclimb-decoration);
+    outline-offset: -4px;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+/*
+dashicons for category and archive lists
+*/
+.wp-block-categories,
+.wp-block-archives {
+    list-style: none;
+    padding: 0;
+}
+
+.wp-block-categories li a,
+.wp-block-archives li a {
+    display: inline-block;
+    padding: 0 0 8px 0;;
+}
+
+.wp-block-categories li a::before,
+.wp-block-archives li a::before {
+    content: "";
+    display: inline-block;
+    font-family: "dashicons";
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.wp-block-categories li a::before {
+    content: "\f318";
+}
+
+.wp-block-archives li a::before {
+    content: "\f480";
+}
+
+.editor-styles-wrapper .wp-block-categories ul,
+.editor-styles-wrapper .wp-block-archives ul,
+.editor-styles-wrapper .wp-block-page-list {
+    list-style: none;
+    padding: 0;
+}
+
+/*
+class to manage sticky header when inside a cover
+*/
+.sticky-cover {
+    position: relative;
+    z-index: 10;
+}
+
+/*
+img:over effects for archives via class so it can be disabled easily
+*/
+.archive-featured-image-effect figure.wp-block-post-featured-image {
+    overflow: hidden;
+}
+
+.archive-featured-image-effect figure.wp-block-post-featured-image a img {
+    transition: 0.2s;
+}
+
+.archive-featured-image-effect figure.wp-block-post-featured-image a img:hover {
+    transform: scale(1.1);
+}
+
+/*
+contact page dashicons
+*/
+.add-clock-inline::before,
+.add-clock-inline::after,
+.add-store-inline::before,
+.add-building-inline::before {
+    font-family: "dashicons";
+    display: inline-block;
+    vertical-align: bottom;
+    content: "";
+}
+
+.add-clock-inline::before {
+    content: "\f469";
+    margin-right: 15px;
+}
+
+.add-clock-inline::after {
+    content: "\f469";
+    margin-left: 15px;
+}
+
+.add-store-inline::before {
+    content: "\f513";
+    margin-right: 15px;
+}
+
+.add-building-inline::before {
+    content: "\f512";
+    margin-right: 15px;
+}
+
+/*
+Quotes with decoration color before paragraphs
+*/
+.add-quotes-inline::before {
+    content: "“";
+    display: inline-block;
+    font-size: 3em;
+    line-height: .05;
+    vertical-align: middle;
+    color: var(--wp--preset--color--mrclimb-decoration);
+}
+
+/*
+Overwrite media width value to show menu icon instead of full menu
+*/
+@media ( min-width: 900px ) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: none !important;
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: block !important;
+    }
+}
+@media ( min-width: 600px ) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+      display: flex;
+    }
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+      display: none;
+    }
+}

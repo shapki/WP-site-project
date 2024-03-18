@@ -1,0 +1,41 @@
+{
+    "title": "Blue and orange",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "Background",
+					"slug": "mrclimb-background"
+				},
+				{
+					"color": "#000000",
+					"name": "Text",
+					"slug": "mrclimb-text"
+				},
+				{
+					"color": "#112D4E",
+					"name": "Dark",
+					"slug": "mrclimb-dark"
+				},
+				{
+					"color": "#FC8428",
+					"name": "Decoration",
+					"slug": "mrclimb-decoration"
+				},
+				{
+					"color": "#FAF4E5",
+					"name": "Element",
+					"slug": "mrclimb-element"
+				},
+				{
+					"color": "#F9F7F7",
+					"name": "Light",
+					"slug": "mrclimb-light"
+				}
+			]
+		}
+    }
+}

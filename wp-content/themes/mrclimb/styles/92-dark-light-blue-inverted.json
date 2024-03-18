@@ -1,0 +1,49 @@
+{
+    "title": "Dark and light blue inverted",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"name": "Background",
+					"slug": "mrclimb-background"
+				},
+				{
+					"color": "#000000",
+					"name": "Text",
+					"slug": "mrclimb-text"
+				},
+				{
+					"color": "#D7F0F3",
+					"name": "Dark",
+					"slug": "mrclimb-dark"
+				},
+				{
+					"color": "#578FBF",
+					"name": "Decoration",
+					"slug": "mrclimb-decoration"
+				},
+				{
+					"color": "#406C91",
+					"name": "Element",
+					"slug": "mrclimb-element"
+				},
+				{
+					"color": "#1E2121",
+					"name": "Light",
+					"slug": "mrclimb-light"
+				}
+			]
+		},
+		"custom": {
+			"color": {
+				"sidebar": "var(--wp--preset--color--mrclimb-dark)",
+				"footer-text": "var(--wp--preset--color--mrclimb-dark)",
+				"element-text": "var(--wp--preset--color--mrclimb-dark)",
+				"hero-text": "var(--wp--preset--color--mrclimb-dark)"
+			}
+		}
+    }
+}

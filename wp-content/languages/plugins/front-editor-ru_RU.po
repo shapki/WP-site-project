@@ -1,0 +1,136 @@
+# Translation of Plugins - Guest posting / Frontend Posting wordpress plugin &#8211; WP Front User Submit / Front Editor - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Guest posting / Frontend Posting wordpress plugin &#8211; WP Front User Submit / Front Editor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-06-26 12:45:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Guest posting / Frontend Posting wordpress plugin &#8211; WP Front User Submit / Front Editor - Stable (latest release)\n"
+
+#: inc/Editor.php:38 templates/admin/settings/form-settings-post.php:13
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: inc/Editor.php:80
+msgid "Updating"
+msgstr "Обновление"
+
+#: inc/Editor.php:37 templates/admin/settings/form-settings-post-update.php:3
+msgid "Update"
+msgstr "Обновить"
+
+#: inc/fields/EditorJsField.php:380
+msgid "Add content"
+msgstr "Приступить к написанию"
+
+#: templates/front-form-header.php:48
+msgid "Add new"
+msgstr "Добавить запись"
+
+#: FrontUserSubmit.php:117 inc/PostFormsListTable.php:407
+msgid "Edit"
+msgstr "Редактировать"
+
+#: inc/MenuSettings.php:22
+msgid "Buy pro version to use this functionality"
+msgstr "Обновите до PRO версии, чтобы использовать эту функцию"
+
+#: inc/MenuSettings.php:26 inc/MenuSettings.php:277
+#: templates/admin/settings/form-settings-post.php:31
+#: templates/admin/settings/form-settings-post.php:82
+msgid "Display"
+msgstr "Отобразить"
+
+#: inc/MenuSettings.php:27
+msgid "Display and require"
+msgstr "Отобразить и сделать обязательным"
+
+#: inc/MenuSettings.php:28
+msgid "Disable this field"
+msgstr "Отключить данное поле"
+
+#: inc/PostFormsListTable.php:313
+#: templates/admin/settings/form-settings-post.php:8
+msgid "Post Status"
+msgstr "Статус записи"
+
+#: functions.php:24 templates/admin/settings/form-settings-post.php:14
+msgid "Pending"
+msgstr "Ожидает подтверждения"
+
+#: templates/user-admin.php:79
+msgid "Newer"
+msgstr "Новые"
+
+#: templates/user-admin.php:80
+msgid "Previous"
+msgstr "Предыдущие"
+
+#: inc/fields/PostTitleField.php:79
+msgid "Please add post title"
+msgstr "Пожалуйста, добавьте заголовок записи"
+
+#: inc/SavePost.php:300 templates/admin/settings/form-settings-post.php:4
+msgid "New post created"
+msgstr "Новая запись успешно создана"
+
+#: inc/SavePost.php:299
+msgid "Post updated"
+msgstr "Запись обновлена"
+
+#: templates/front-form-header.php:52
+msgid "View Post"
+msgstr "Посмотреть запись"
+
+#: inc/Form.php:491 templates/front-editor/post-title.php:2
+msgid "Add Title"
+msgstr "Добавить заголовок"
+
+#. Author of the plugin
+#: front-editor.php
+msgid "Aleksan Aharonyan"
+msgstr "А. Агаронян"
+
+#: FrontUserSubmit.php:105 inc/Blocks.php:53 inc/MenuSettings.php:118
+msgid "Edit in front editor"
+msgstr "Редактировать в Front Editor"
+
+#: inc/Editor.php:50 inc/Editor.php:54 inc/SavePost.php:237
+#: inc/SavePost.php:242
+msgid "The post you trying to edit is not exist, please create a new one"
+msgstr "Страница которую вы пытаетесь редактировать не существует пожалуйста создайте новую "
+
+#: inc/MenuSettings.php:189
+msgid "Short information"
+msgstr "Краткая информация"
+
+#: inc/SavePost.php:224
+msgid "Security error, please update page"
+msgstr "Ошибка безопасности, пожалуйста, обновите страницу"
+
+#: inc/SavePost.php:141
+msgid "Image type is not supported, please select another image"
+msgstr "Тип изображения не поддерживается, выберите другое изображение"
+
+#. Plugin URI of the plugin
+#: front-editor.php
+msgid "https://wpfronteditor.com/"
+msgstr "https://wpfronteditor.com/"
+
+#. Author URI of the plugin
+#: front-editor.php
+msgid "https://github.com/Aharonyan/"
+msgstr "https://github.com/Aharonyan/"
+
+#: inc/fields/PostTitleField.php:85
+msgid "Please add correct post title"
+msgstr "Исправьте заголовок записи"
+
+#. Description of the plugin
+#: front-editor.php
+msgid "Have you ever seen websites that allow users to submit posts or other type of content? Do you want to have user-submitted content on your site? Front Editor allow users to submit blog posts to your WordPress site with new frontend block editor EditorJs."
+msgstr "Вы видели сайты, которые позволяют пользователям добавлять статьи или другой тип контента? Хотите ли вы, чтобы пользователь размещал контент на вашем сайте? Front Editor позволяет пользователям добавлять статьи на ваш сайт WordPress с помощью нового редактора блоков EditorJs."

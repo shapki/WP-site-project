@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+    <!-- wp:group {"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group">
+        <!-- wp:cover {"useFeaturedImage":true,"dimRatio":40,"minHeight":128,"minHeightUnit":"px","isDark":false,"align":"wide","layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover alignwide is-light" style="min-height:128px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span>
+            <div class="wp-block-cover__inner-container">
+                <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+                <div class="wp-block-group">
+                    <!-- wp:post-title {"style":{"typography":{"textTransform":"uppercase"}},"textColor":"white"} /-->
+                </div>
+                <!-- /wp:group -->
+            </div>
+        </div>
+        <!-- /wp:cover -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+        <!-- wp:group {"layout":{"type":"default"}} -->
+        <div class="wp-block-group">
+            <!-- wp:spacer {"height":10} -->
+            <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+
+            <!-- wp:post-content {"layout":{"inherit":true}} /-->
+
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
+            <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+                <!-- wp:template-part {"slug":"comments","theme":"mrclimb","area":"uncategorized","className":"no-space-comment"} /-->
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-3columns","tagName":"footer"} /-->
